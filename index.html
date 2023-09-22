@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title>Date Difference, Meter Reading & Bill Calculator</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="calculators-container">
+ 
+  <div class="container">
+    <h1>Date Difference Calculator</h1>
+    <label for="start-date">Start Date:</label>
+    <input type="date" id="start-date">
+  
+    <label for="end-date">End Date:</label>
+    <input type="date" id="end-date">
+  
+    <label class="checkbox-label">
+      <input type="checkbox" id="today-checkbox">
+      Select end date as today
+    </label>
+    <label class="checkbox-label">
+      <input type="checkbox" id="include-checkbox">
+      Include end date in calculation
+    </label>
+
+    <label for="result">DISCLAIMER: The end date is not included in the date calculation. If you want to include that day, please tick "Include end date in calculation"</label>
+  
+    <button onclick="calculateDateDifference()">Calculate</button>
+    <p id="result"></p>
+  </div>
+
+  <div class="container meter-reading-container">
+    <h1>Meter Reading Calculator</h1>
+    <label for="current-reading">Current Reading:</label>
+    <input type="number" id="current-reading">
+
+    <label for="previous-reading">Previous Meter Reading:</label>
+    <input type="number" id="previous-reading">
+
+    <label class="checkbox-label">
+      <input type="checkbox" id="apply-formula3-checkbox">
+      I'm using kWh electric readings
+    </label>
+    <label class="checkbox-label">
+      <input type="checkbox" id="apply-formula-checkbox">
+      Convert from m3 to kWh
+    </label>
+    <label class="checkbox-label">
+      <input type="checkbox" id="apply-formula2-checkbox">
+      Convert from f3 to kWh
+    </label>
+
+    <label for="usage-result">DISCLAIMER: Calorific conversion value varies. Gas bill calculations will differ to actual charges.</label>
+  
+    <button onclick="calculateMeterReading()">Calculate</button>
+    <p id="usage-result"></p>
+  </div>
+
+  <div class="container bill-calculator-container">
+    <h1>Estimated Bill Calculator</h1>
+    <label for="usage">Usage in kWh:</label>
+    <input type="number" id="usage">
+
+    <label for="unit-rate">Unit Rate:</label>
+    <input type="number" id="unit-rate">
+    
+    <label for="days">Days:</label>
+    <input type="number" id="days">
+    <label for="standing-charge">Standing Charge:</label>
+    <input type="number" id="standing-charge">
+    <button onclick="calculateBill()">Calculate Bill</button>
+    <p id="bill-result"></p>
+  </div>
+</div>
+
+<div class="info-tooltip">
+  <span class="info-text">ℹ</span>
+  <span class="tooltip-text">This practice tool was created by Ginny. If you have any feedback, suggestions, or found a bug, please contact me on slack. Thanks, Ginny G</span>
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>

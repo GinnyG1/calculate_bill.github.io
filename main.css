@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #100030;
+    color: #FFFFFF;
+  }
+  
+  .calculators-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container {
+    height: 500px;
+    width: 350px;
+    margin-top: 40;
+    border: 2px solid #F050F8;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #100030;
+    box-shadow: 0 0 5px #F050F8, 0 0 10px #F050F8, 0 0 15px #F050F8, 0 0 25px #F050F8;
+    animation: neonGlow 2s linear infinite;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #F050F8;
+    margin-bottom: 25px;
+  }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16.1px; /* Set the font size for the labels */
+  }
+  
+  /* Change the date input field color to #6018C8 */
+  input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #6018C8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Add margin to the button to create a gap */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F050F8;
+    color: #100030;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 23px;
+    box-shadow: 0 0 20px #F050F8; /* Neon light glow effect for the button */
+  }
+  
+  button:hover {
+    background-color: #D740D2;
+  }
+  
+  #result {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Flexbox for checkbox labels */
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 16px; /* Set the font size for the checkbox labels */
+  }
+  
+  .checkbox-label input {
+    margin-right: 10px;
+  }
+  
+  
+  #result {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 10px;
+    color: #D740D2; /* Set the default color to #D740D2 */
+    cursor: pointer;
+  }
+  
+  #result:hover {
+    color: #50dff8; /* Change the color to #50dff8 on hover */
+  }
+  
+  .alert {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #50dff8;
+    color: #100030;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Existing styles for the Date Difference Calculator (you can keep them) */
+  
+  /* Additional styles for the Meter Reading Calculator */
+  .meter-reading-container {
+    height: 500px;
+    width: 350px;
+    margin-top: 40px;
+    border: 2px solid #F050F8;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #100030;
+    box-shadow: 0 0 5px #F050F8, 0 0 10px #F050F8, 0 0 15px #F050F8, 0 0 25px #F050F8;
+    animation: neonGlow 2s linear infinite;
+  }
+  
+  .meter-reading-container h1 {
+    text-align: center;
+    color: #F050F8;
+    margin-bottom: 20px;
+  }
+  
+  .meter-reading-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #FFFFFF; /* Set the text color to white */
+  }
+  
+  .meter-reading-container input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #6018C8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .meter-reading-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F050F8;
+    color: #100030;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 23px;
+    box-shadow: 0 0 20px #F050F8;
+  }
+  
+  .meter-reading-container button:hover {
+    background-color: #D740D2;
+  }
+  
+  .meter-reading-container #usage-result {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 10px;
+    color: #D740D2;
+    cursor: pointer;
+  }
+  
+  .meter-reading-container #usage-result:hover {
+    color: #50dff8;
+  }
+  
+  .meter-reading-container .alert {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #50dff8;
+    color: #100030;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .bill-calculator-container {
+    height: 500px;
+    width: 350px;
+    margin-top: 40px;
+    border: 2px solid #F050F8;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #100030;
+    box-shadow: 0 0 5px #F050F8, 0 0 10px #F050F8, 0 0 15px #F050F8, 0 0 25px #F050F8;
+    animation: neonGlow 2s linear infinite;
+  }
+  
+  .bill-calculator-container h1 {
+    text-align: center;
+    color: #F050F8;
+    margin-bottom: 20px;
+  }
+  
+  .bill-calculator-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #FFFFFF; /* Set the text color to white */
+  }
+  
+  .bill-calculator-container input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #6018C8;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .bill-calculator-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F050F8;
+    color: #100030;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 23px;
+    box-shadow: 0 0 20px #F050F8;
+  }
+  
+  .bill-calculator-container button:hover {
+    background-color: #D740D2;
+  }
+  
+  .bill-calculator-container #bill-result {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 10px;
+    color: #D740D2;
+    cursor: pointer;
+  }
+  
+  .bill-calculator-container #bill-result:hover {
+    color: #50dff8;
+  }
+  
+  .bill-calculator-container .alert {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #50dff8;
+    color: #100030;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .info-tooltip {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .info-text {
+    font-size: 24px;
+    color: #100030;
+    background-color: #F050F8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(240, 80, 248, 0.8);
+  }
+  
+  .tooltip-text {
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    visibility: hidden;
+    width: 250px;
+    background-color: #F050F8;
+    color: #100030;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(240, 80, 248, 0.8);
+    z-index: 1;
+  }
+  
+  .info-tooltip:hover .tooltip-text {
+    visibility: visible;
+  }
+
+  .container label,
+  .bill-calculator-container label {
+        color: #FFFFFF;
+  }
